@@ -1,4 +1,12 @@
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
 .navBarTop{
+    position: sticky;
+    width: 100%;
     display: flex;
     background-color:#0098DB;
     align-items: center;
@@ -157,8 +165,9 @@
     padding-top: 16px;
 }
 
-.about{
-    background-color: #364058;
+.readMore{
     color: white;
-    font-family: 'Calibri';
+    background-color: #0098DB;
+    padding: 10px 25px 10px 25px;
+    border-radius: 7px;
 }
