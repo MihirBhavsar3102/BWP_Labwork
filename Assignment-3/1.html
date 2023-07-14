@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Form</title>
-  </head>
-  <body>
-    <form action=""></form>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <div class="registrationForm">
+    <h1>Registration Form</h1>
+    <form>
+      <div class="name">
+        <label for="firstname" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="name" placeholder="First name" required>
+        <label for="middlename" class="form-label">Middle Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Middle name" required>
+        <label for="lastname" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Last name" required>
+      </div>
+      <div class="gender">
+        <label for="gender">Select Your Gender:</label><br>
+        <input type="radio" name="gender" id="male" checked>
+        <label for="male">
+          Male
+        </label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">
+          Female
+        </label>
+        <input type="radio" name="gender" id="other">
+        <label for="other">
+          Other
+        </label>
+      </div>
+      <div class="address">
+        <label for="address" class="form-control">Address:</label>
+        <textarea name="adddress" class="form-control" id="address" cols="80" rows="10" placeholder="Enter your address here...."></textarea>
+      </div>
+      <div class="phoneNumber">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="number" class="form-control" placeholder="Enter your Phone number">
+      </div>
+      <div class="email">
+        <label for="email" class="form-control">Email</label>
+        <input type="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+      <div class="hobbies">
+        <label for="hobbies">Your Hobbies: </label><br>
+        <input type="checkbox" name="Reading" id="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" name="Sports" id="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="Music" id="musci">
+        <label for="musci">Music</label>
+        <input type="checkbox" name="Travel" id="travel">
+        <label for="travel">Travel</label>
+      </div>
+      <div class="city">
+        <label for="city" class="form-control">City:</label>
+        <input type="text" class="form-control" placeholder="Enter your city name">
+      </div>
+      <div class="state">
+        <label for="state" class="form-control">State:</label>
+        <input type="text" class="form-control" placeholder="Enter your state name">
+      </div>
+      <div class="country">
+        <label for="country" class="form-control">Country:</label>
+        <input type="text" class="form-control" placeholder="Country name">
+      </div>
+      <div class="collegeName">
+        <label for="collegeName">College Name:</label>
+        <select name="collegeName" class="form-select form-select mb-3" id="collegeName">
+        <option selected>Chooose your college</option>
+        <option value="1">L.D College of Engineerig</option>
+        <option value="2">MSU, Baroda</option>
+        <option value="3">VGEC</option>
+        <option value="4">Nirma</option>
+        <option value="5">PDEU</option>
+      </select>
+      </div>
+
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
