@@ -182,5 +182,177 @@
 }
 .rightNavBar{
     width: 15%;
-    
+    padding-left: 40px;
+}
+.annualReport{
+    padding-top: 5px;
+    margin: 5px;
+}
+.notification{
+    padding-top: 20px;
+    margin: 5px;
+}
+.accreditation{
+    padding-top: 20px;
+    margin: 5px;
+}
+.ranking{
+    padding-top: 20px;
+    margin: 5px;
+}
+.staffRecognition{
+    padding-top: 20px;
+    margin: 5px;
+}
+.staffAchievements{
+    padding-top: 20px;
+    margin: 5px;
+}
+.buttons{
+    width: 100%;
+    margin: 10px 10px 5px -35px;
+    font-family: 'Calibri';
+    display:inline-flex;
+    justify-content:space-evenly;
+}
+.admission{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #da670f !important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.msubDigital{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #da670f !important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.alumni{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #A01F40 !important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.recruitment{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #A01F40 !important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.hmLibrary{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #D72A2B !important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.msubEvents{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #D72A2B !important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.gujSat{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #49CFAD!important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.cccExam{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #49CFAD!important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.atGlance{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #777293!important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.msubConnect{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #777293!important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+
+.usefulLinks{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #EF6F56!important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.journal{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #EF6F56!important;
+    color: white;
+    font-size: 15px;
+    width: 150%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+.scrollableText{
+    margin-top: 5px;
+    width: 102%;
+    margin: -8px;
+    height: 60px;
+    background-color: #0098DB;
+    font-family: 'Open Sans', sans-serif;
 }
