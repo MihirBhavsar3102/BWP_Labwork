@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>Navigation Bar</title>
 </head>
-<style>
-    .navigationBar{
-        background-color: black;
-        color: white;
-        text-align: center;
-        width: 20%;
-        text-transform: uppercase;
-    }
-</style>
+    
 <body>
-    <div class="navigationBar">
-        <nav>
-            <div class="home">
-                Home
-            </div>
-            <div class="news">
-                News
-            </div>
-            <div class="contact"> 
-                Contact
-            </div>
-            <div class="about">
-                About
-            </div>
-        </nav>
-    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand">Vertical Navigation Bar</a><br><br><br>
+          <ul class="nav flex-column">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+      </nav>
 </body>
+
 </html>
