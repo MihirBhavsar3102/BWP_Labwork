@@ -10,12 +10,13 @@
         href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico"
         type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="6.css">
 </head>
 
 <body>
 
-    <!-- header -->
     <header>
         <div class="nav-container">
             <div class="logo">
@@ -62,19 +63,33 @@
                 Cart
             </div>
         </div>
-    </header> 
+    </header>
     <!-- Header completed -->
 
-    <!-- section 1 -->
+
     <section class="section-1">
-        <div class="section-1-container">
+        <div class="dropdown">
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/178cf5a874cd697a.png?q=100" alt="">
                 Top Offers
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e2268d56d09df684.png?q=100" alt="">
-                Mobiles & Tablets
+                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: white;">
+                    Mobiles & Tablets <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">OnePlus</a></li>
+                        <li><a href="#">Oppo</a></li>
+                        <li><a href="#">Vivo</a></li>
+                        <li><a href="#">Realme</a></li>
+                        <li><a href="#">Redmi</a></li>
+                    </ul>
+            </div>
+            <div class="section-1-item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100" alt="">
+                Fashion
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100" alt="">
@@ -83,10 +98,6 @@
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100" alt="">
                 TVs & Appliances
-            </div>
-            <div class="section-1-item">
-                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100" alt="">
-                Fashion
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5f09b2d254acb48a.png?q=100" alt="">
@@ -108,19 +119,21 @@
     </section>
     <!-- section 1 completed  -->
 
-    <!-- section 2 -->
+
     <section class="section-2 container">
         <div class="section-2-container">
         </div>
     </section>
+    <!-- section 2 completed  -->
 
-    <!-- section 3 -->
+
     <section class="section-3 container">
         <div class="section-3-container">
         </div>
     </section>
+    <!-- section 3 completed  -->
 
-    <!-- section 4 -->
+
     <section class="section-4 container">
         <div class="section-4-container">
             <div class="section-4-offers">
@@ -131,66 +144,67 @@
             </div>
             <div class="section-4-list">
                 <div class="section-4-item">
-                    <img src="https://rukminim1.flixcart.com/image/400/400/l1tmf0w0/stuffed-toy/2/c/q/3-feet-printed-foot-teddy-bear-stuffed-toys-latest-teddy-bear-90-original-imagdazpzwhhvkhu.jpeg?q=70"
+                    <img src="https://rukminim2.flixcart.com/image/400/400/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70"
                         alt="">
-                    <div class="section-4-item-head">Soft Toy</div>
-                    <div class="section-4-item-price">Under ₹299</div>
+                    <div class="section-4-item-head">Top Mirrorless Camera</div>
+                    <div class="section-4-item-price">Starting from ₹29,990</div>
                     <div class="section-4-item-explore">Explore Now!</div>
                 </div>
                 <div class="section-4-item">
-                    <img src="https://rukminim1.flixcart.com/image/400/400/kn0n6a80/remote-control-toy/i/t/l/mini-racing-4-channel-radio-control-rc-car-miss-chief-original-imagfs8264ewfmnw.jpeg?q=70"
+                    <img src="https://rukminim2.flixcart.com/image/400/400/l51d30w0/shoe/z/w/c/10-mrj1914-10-aadi-white-black-red-original-imagft9k9hydnfjp.jpeg?q=70"
                         alt="">
-                    <div class="section-4-item-head">Soft Toy</div>
-                    <div class="section-4-item-price">Under ₹299</div>
+                    <div class="section-4-item-head">Causal Shoes</div>
+                    <div class="section-4-item-price">Min. 70% Off</div>
                     <div class="section-4-item-explore">Explore Now!</div>
                 </div>
                 <div class="section-4-item">
-                    <img src="https://rukminim1.flixcart.com/image/400/400/l51d30w0/television/1/k/j/-original-imagfsyu8nrz5gzg.jpeg?q=70"
+                    <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/t-shirt/3/d/i/l-jc22-hd-fs-black-jmc-pckt-jump-cuts-original-imagg3yxfk48y7nt.jpeg?q=70"
                         alt="">
-                    <div class="section-4-item-head">Remote Control Toys</div>
+                    <div class="section-4-item-head">Men's T-Shirt</div>
                     <div class="section-4-item-price">Min 50% Off</div>
                     <div class="section-4-item-explore">Explore Now!</div>
                 </div>
                 <div class="section-4-item">
-                    <img src="https://rukminim1.flixcart.com/image/400/400/khuvxjk0-0/mouse/l/t/6/zeb-transformer-m-zebronics-original-imafxrugfftphbkk.jpeg?q=70"
+                    <img src="https://rukminim2.flixcart.com/image/400/400/ktop5e80/tablet/x/9/o/mk2k3hn-a-apple-original-imag6yy7xjjugz4w.jpeg?q=70"
                         alt="">
-                    <div class="section-4-item-head">Top Smart TVs</div>
-                    <div class="section-4-item-price">Buy Now</div>
+                    <div class="section-4-item-head">Apple iPads</div>
+                    <div class="section-4-item-price">Shop Now</div>
                     <div class="section-4-item-explore">Explore Now!</div>
                 </div>
                 <div class="section-4-item">
-                    <img src="https://rukminim1.flixcart.com/image/400/400/kpft18w0/action-figure/w/l/m/iron-man-pvc-solar-bobble-head-in-standing-position-avenger-red-original-imag3njyfnkyaskf.jpeg?q=70"
+                    <img src="https://rukminim2.flixcart.com/image/400/400/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=70"
                         alt="">
-                    <div class="section-4-item-head">Gaming Mouse</div>
-                    <div class="section-4-item-price">From ₹299</div>
+                    <div class="section-4-item-head">Monitors</div>
+                    <div class="section-4-item-price">From ₹8999</div>
                     <div class="section-4-item-explore">Explore Now!</div>
                 </div>
                 <div class="section-4-item">
-                    <img src="https://rukminim1.flixcart.com/image/400/400/jn3hocw0/microphone/d/c/e/boya-by-m1-3-5mm-electret-condenser-microphone-with-1-4-adapter-original-imaf9v2jhhakavks.jpeg?q=70"
+                    <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/refrigerator-new/q/f/e/-original-imagmxh2ja7gzkaa.jpeg?q=70"
                         alt="">
-                    <div class="section-4-item-head">Action Figure</div>
-                    <div class="section-4-item-price">Under ₹699</div>
+                    <div class="section-4-item-head">Samsung Regrigerator</div>
+                    <div class="section-4-item-price">From ₹12,999</div>
                     <div class="section-4-item-explore">Explore Now!</div>
                 </div>
                 <div class="section-4-item">
-                    <img src="https://rukminim1.flixcart.com/image/400/400/l1tmf0w0/stuffed-toy/2/c/q/3-feet-printed-foot-teddy-bear-stuffed-toys-latest-teddy-bear-90-original-imagdazpzwhhvkhu.jpeg?q=70"
+                    <img src="https://rukminim2.flixcart.com/image/400/400/jwgple80/backpack/n/e/w/spin-laptop-backpack-01-teal-fs0-0-11-001-laptop-backpack-original-imafh54gqnmpsczs.jpeg?q=70"
                         alt="">
-                    <div class="section-4-item-head">windows, doors the perfect look</div>
-                    <div class="section-4-item-price">From ₹229</div>
+                    <div class="section-4-item-head">Backpacks</div>
+                    <div class="section-4-item-price">Min. 65% Off</div>
                     <div class="section-4-item-explore">Explore Now!</div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- section 4 completed  -->
 
-    <!-- section 5 -->
+
     <section class="section-5 container">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/960/960/image/d78dda604e158c5c.jpg?q=50" alt="">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/960/960/image/6e9e6f6130cddc96.jpg?q=50" alt="">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/960/960/image/2073732fc5e1fef2.jpg?q=50" alt="">
     </section>
+    <!-- section 5 completed  -->
 
-    <!-- footer -->
     <footer>
         Made in 🇮🇳 by Flipkart
     </footer>

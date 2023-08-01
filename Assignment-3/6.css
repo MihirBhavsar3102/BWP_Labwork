@@ -123,11 +123,11 @@ header .cart svg {
 /* section 1 */
 .section-1 {
     width: 100%;
-    height: 112px;
+    height: 115px;
     background-color: white;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
 }
-.section-1-container{
+.dropdown{
     width: 1280px;
     margin: 0 auto;
     height: 100%;
