@@ -261,10 +261,15 @@ header .cart svg {
 
 /* footer */
 footer {
-    margin-top: 26px;
-    background-color: white;
+    background-color: #212121;
+    margin-top: 40px;
     padding: 25px;
     text-align: center;
     font-size: 14px;
     color: #878787 ;
+}
+
+footer li{
+    
+    color: white;
 }
