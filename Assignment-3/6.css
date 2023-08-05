@@ -263,13 +263,25 @@ header .cart svg {
 footer {
     background-color: #212121;
     margin-top: 40px;
-    padding: 25px;
-    text-align: center;
+    padding: 5px;
     font-size: 14px;
     color: #878787 ;
-}
+} 
 
 footer li{
-    
+    font-weight: 500;
     color: white;
+}
+
+footer .mailUs p{
+    margin-top: 5px;
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+}
+footer .officeAddress p{
+    margin-top: 5px;
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
 }
