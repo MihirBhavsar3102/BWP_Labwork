@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color of Paragraph</title>
+    <style>
+        #paragraph {
+            border: 1px solid black;
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 10px;
+            padding: 50px;
+        }
+
+        #btn {
+            text-align: center;
+        }
+
+        p {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="paragraph">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique neque perspiciatis, quaerat nesciunt
+            facere ea? Dolorem earum eaque porro reiciendis molestiae illo nostrum, recusandae numquam obcaecati iste
+            ea, expedita est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque error accusantium
+            reiciendis, impedit, reprehenderit facilis dolore quaerat rerum eveniet vero beatae itaque sed quod ea quae
+            soluta nobis nostrum?
+        </p>
+    </div>
+    <div id="btn">
+        <button onclick="bgChange()">Click me to turn on Dark Mode!</button>
+    </div>
+
+    <script>
+        function bgChange(){
+            document.getElementById("paragraph").style.backgroundColor = "black";
+        }
+    </script>
+</body>
+
+</html>
