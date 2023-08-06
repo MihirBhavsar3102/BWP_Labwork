@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fahrenheit to Celsius Conversion</title>
+</head>
+
+<body>
+
+    <h2>Fahrenheit to Celsius Conversion</h2>
+
+    <p>Enter Fahrenheit temperature: <input type="number" id="fahrenheitInput"></p>
+    <button onclick="convert()">Convert</button>
+
+    <script>
+        function convert() {
+            const fahrenheit = parseFloat(document.getElementById("fahrenheitInput").value);
+            const celsius = (fahrenheit - 32) * 5 / 9;
+            const result = `${fahrenheit} Fahrenheit is equal to ${celsius} Celsius`;
+            alert(result);
+        }
+    </script>
+
+</body>
+
+</html>
