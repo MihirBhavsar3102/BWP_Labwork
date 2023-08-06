@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image size Increase</title>
+</head>
+<body>
+    <div class="image" style="margin-top: 150px; text-align: center;">
+        <img onclick="enlarge(this)" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" height="300px" width="300px">
+    </div>
+</body>
+
+<script>
+    function enlarge(img){
+        img.style.transform = "scale(1.3)";
+        img.style.transition = "transform 1.0s ease";
+    }
+</script>
+</html>
