@@ -7,7 +7,7 @@
   <title>Traffic Signal</title>
 </head>
 <style>
-  .trafficLights {
+  #trafficLights {
     width: 100px;
     height: 300px;
     background-color: black;
@@ -18,22 +18,22 @@
     align-items: center;
   }
 
-  .trafficLights div {
+  #trafficLights div {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     margin: auto;
   }
 
-  .red {
+  #red {
     background-color: red;
   }
 
-  .yellow {
+  #yellow {
     background-color: yellow;
   }
 
-  .green {
+  #green {
     background-color: green;
   }
 </style>
@@ -41,14 +41,43 @@
 <body>
   <center>
     <h1>Traffic Lights</h1>
-    <div class="trafficLights">
-      <div class="green"></div>
-      <div class="yellow"></div>
-      <div class="red"></div>
+    <div id="trafficLights">
+      <div id="green"></div>
+      <div id="yellow"></div>
+      <div id="red"></div>
     </div>
-    
+
 
     <script>
+      function startSignal(){
+        var green=document.getElementById("green");
+        var yellow=document.getElementById("yellow");
+        var red=document.getElementById("red");
+
+        green.style.opacity=1;
+        setTimeout(function () {
+            green.style.opacity=.3;
+            red.style.opacity=.3;
+            yellow.style.opacity=1;
+        },5000);
+
+        setTimeout(function () {
+            green.style.opacity=.3;
+            red.style.opacity=1;
+            yellow.style.opacity=.3;
+        },7000);
+
+        setTimeout(function(){
+          green.style.opacity=1;
+          red.style.opacity=.3;
+          yellow.style.opacity=.3;
+        },12000);
+      }
+      var timer=setInterval(function () {
+        startSignal();
+    },12000);
+ 
+    startSignal();
     </script>
   </center>
 
