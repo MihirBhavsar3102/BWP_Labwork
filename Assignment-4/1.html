@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
+    <style>
+        .btn {
+            margin-top: 100px;
+            background-color: black;
+            color: #fffffe;
+            border: none;
+            font-size: 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: white;
+            /* Green */
+            color: black;
+            border: 1px solid;
+        }
+    </style>
 </head>
+
 <body>
-    <center><h2 style="margin-top: 50px;">Youtube Video</h2></center>
+    <center>
+        <h2 style="margin-top: 50px;">Youtube Video</h2>
+    </center>
     <div id="vid" style="margin-top: 100px; text-align: center;">
-        <iframe src="https://www.youtube.com/embed/_fzQRw2RhVg" frameborder="0"></iframe>
+        <iframe src="https:/www.youtube.com/embed/VigwcGBXKRg" frameborder="0"></iframe>
+    </div>
+    <div>
+        <center>
+            <button class="btn" onclick="small()">Small</button>
+            <button class="btn" onclick="normal()">Normal</button>
+            <button class="btn" onclick="large()">Large</button>
+        </center>
+
     </div>
 </body>
+
+<script>
+    function small() {
+        var video = document.getElementById("vid");
+        vid.style.transform = "scale(0.5)";
+        vid.style.transition = "transform 1.0s ease";
+    }
+    function normal() {
+        var video = document.getElementById("vid");
+        vid.style.transform = "scale(1.0)";
+        vid.style.transition = "transform 1.0s ease";
+    }
+    function large() {
+        var video = document.getElementById("vid");
+        vid.style.transform = "scale(2.0)";
+        vid.style.transition = "transform 1.0s ease";
+    }
+</script>
+
 </html>
