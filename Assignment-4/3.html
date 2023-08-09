@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-3</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Login Form</h1>
+        <form onsubmit= "return verifyPassword(), verifyUsername()">
+            <label for="username">Username: </label>
+            <input id="username" type="text" placeholder="Enter your username"> <br><br>
+
+            <label for="password">Password: </label>
+            <input id="password" type="password" placeholder="Enter your password"> <br><br>
+
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+<script>
+
+    function verifyUsername() {
+        var userName = document.getElementById('username');
+
+        if (userName = "") {
+            alert("Username cannot be empty!");
+            return false;
+        }
+
+    }
+
+    function verifyPassword() {
+        var password = document.getElementById('password').value;
+
+        if (password == "") {
+            alert("Fill the password!");
+            return false;
+        }
+        if (password.length < 6) {
+            alert("Password must be more than 6 characters");
+            return false;
+        }
+        if (password.length > 12) {
+            alert("Password must be less than 12 characters");
+            return false;
+        }
+    }
+
+</script>
+
+</html>
