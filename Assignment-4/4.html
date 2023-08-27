@@ -1,34 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical-4</title>
+    <title>Vowel Occurrence and String Extraction</title>
 </head>
 
 <body>
-    <input type="text" id="str" />
-    <br />
-    <button id="btn" onclick="stringFetcher()">Return</button>
-</body>
+    <script>
+        function findVowelPositionsAndSubstring(word) {
+            var firstVowelIndex = -1;
+            var lastVowelIndex = -1;
 
-<script>
-    function stringFetcher() {
-        var returnStr = "";
-        var str = document.getElementById("str").value;
-        for (let i = 0; i < str.length; i++) {
-            if (str[i] == "a") {
-                for (let j = i + 1; j < str.length; j++) {
-                    if (str[j] == "a") {
-                        alert(returnStr);
+            for (var i = 0; i < word.length; i++) {
+                if ("aeiouAEIOU".indexOf(word[i]) !== -1) {
+                    if (firstVowelIndex === -1) {
+                        firstVowelIndex = i;
                     }
-                    returnStr = returnStr + str[j];
+                    lastVowelIndex = i;
                 }
             }
-        }
-    }
 
-</script>
+            if (firstVowelIndex !== -1 && lastVowelIndex !== -1) {
+                var extractedSubstring = word.substring(firstVowelIndex + 1, lastVowelIndex);
+                return {
+                    firstVowelPosition: firstVowelIndex + 1,
+                    lastVowelPosition: lastVowelIndex + 1,
+                    extractedSubstring: extractedSubstring
+                };
+            } else {
+                return null;
+            }
+        }
+
+        function input() {
+            var word = document.getElementById("word").value;
+            var output = document.getElementById("output");
+
+            var result = findVowelPositionsAndSubstring(word);
+
+            if (result !== null) {
+                output.innerHTML = "First Vowel Position: " + result.firstVowelPosition +
+                    "<br>Last Vowel Position: " + result.lastVowelPosition +
+                    "<br>Extracted Substring: " + result.extractedSubstring;
+            } else {
+                output.innerHTML = "No vowels found in the input word.";
+            }
+        }
+    </script>
+
+    <h2>Find Vowel Occurrence and Extract Substring</h2>
+    <label for="word">Enter a word:</label>
+    <input type="text" id="word">
+    <button onclick="input()">Find and Extract</button>
+
+    <div id="output"></div>
+</body>
 
 </html>

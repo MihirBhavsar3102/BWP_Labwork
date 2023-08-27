@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical-1</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#panel, #container {
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(255, 218, 185, 0.854);
+  border: solid 1px purple;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
 </head>
 <body>
-    
+ 
+<div id="container">Panel</div>
+<div id="panel">jQuery Toggle</div>
+<button id="btn">Click here to toggle</button>
+
 </body>
 </html>
